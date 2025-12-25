@@ -1,1 +1,28 @@
-
+Clinical Operations Bottleneck Analysis
+Objective
+This project aims to identify clinical bottlenecks in U.S. inpatient care using CMS DRG-level data.
+The focus is on operational stress rather than cost alone, measuring how heavily hospitals are
+burdened by specific clinical conditions.
+Data Overview
+The dataset includes hospital identifiers, DRG descriptions, discharge counts, and Medicare
+payment information. Each record represents a hospital–DRG combination, enabling provider-level
+normalization and aggregation.
+Methodology
+1. Aggregate discharges at the hospital–DRG level to normalize provider size.
+2. Compute DRG-level metrics: hospital count, total discharges, and average discharges per
+hospital.
+3. Join payment data to contextualize operational load with financial impact.
+4. Rank DRGs by average discharges per hospital to identify bottlenecks.
+Key Findings
+High-impact bottlenecks were dominated by septicemia, heart failure, and respiratory conditions.
+These DRGs consistently impose high recurring operational load across hospitals.
+Hospital & Regional Stress
+Hospital-level and state-level analyses revealed uneven distribution of bottleneck pressure,
+highlighting facilities and regions facing chronic capacity stress.
+Composite Bottleneck Index
+A weighted index combining normalized volume pressure and cost pressure was introduced to
+reflect real-world prioritization between throughput and financial impact.
+Conclusion
+This project demonstrates how structured SQL analytics can translate raw healthcare data into
+actionable operational insights for capacity planning and policy decision-making.
+Author: Prashika M
