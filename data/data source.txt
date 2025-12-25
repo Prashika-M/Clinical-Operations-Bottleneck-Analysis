@@ -1,1 +1,4 @@
+Data Source:
+CMS Inpatient Prospective Payment System (IPPS) Provider Summary Data
+Publicly available dataset used for educational and portfolio purposes.
 
